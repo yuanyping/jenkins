@@ -27,6 +27,8 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 Import code
 
+system version: ubuntu16.04
+
 配置中java、jenkins.jar 包自行下载到与Dockerfile相同目录
 
 该版本集合了ansible 和saltstack
