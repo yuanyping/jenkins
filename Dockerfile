@@ -15,5 +15,6 @@ ADD master /etc/salt/master
 RUN mkdir /srv/salt -p && mkdir /srv/pillar -p 
 RUN apt install curl -y
 ADD start.sh /opt/start.sh
+ADD ssh_config /etc/ssh/ssh_config
 RUN chmod +x /opt/start.sh
 CMD ["bash","/opt/start.sh"]
