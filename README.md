@@ -34,3 +34,16 @@ system version: ubuntu16.04
 该版本集合了ansible 和saltstack
 
 saltstack版本为2016.11
+
+[root@localhost jenkins]# tree -L 1 ./
+./
+├── Dockerfile
+├── java
+├── jenkins.war
+├── master
+├── README.md
+├── Shanghai
+├── ssh_config
+├── start.sh
+└── trusted.gpg
+
