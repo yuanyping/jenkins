@@ -13,7 +13,7 @@ RUN apt install apt-transport-https -y
 RUN  echo "deb https://repo.saltstack.com/apt/ubuntu/16.04/amd64/2016.11/ xenial main" >> /etc/apt/sources.list && apt update && apt-get install salt-master -y
 ADD master /etc/salt/master
 RUN mkdir /srv/salt -p && mkdir /srv/pillar -p 
-RUN apt install curl sshpass vim -y
+RUN apt install curl sshpass vim unzip -y
 ADD start.sh /opt/start.sh
 ADD ssh_config /etc/ssh/ssh_config
 RUN chmod +x /opt/start.sh
